@@ -1,0 +1,57 @@
+﻿{
+  "name": "aiset_skills",
+  "owner": {
+    "name": "icodebase-cn (icodebase)",
+    "email": "aiset0818@gmail.com"
+  },
+  "metadata": {
+    "description": "Skills shared by  aiset for improving daily work efficiency",
+    "version": "1.36.0"
+  },
+  "plugins": [
+    {
+      "name": "content-skills",
+      "description": "Content generation and publishing skills",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/aiset-xhs-images",
+        "./skills/aiset-post-to-x",
+        "./skills/aiset-post-to-wechat",
+        "./skills/aiset-article-illustrator",
+        "./skills/aiset-cover-image",
+        "./skills/aiset-slide-deck",
+        "./skills/aiset-comic",
+        "./skills/aiset-infographic",
+        "./skills/aiset-manga-drama",
+        "./skills/aiset-manga-style-video"
+      ]
+    },
+    {
+      "name": "ai-generation-skills",
+      "description": "AI-powered generation backends",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/aiset-danger-gemini-web",
+        "./skills/aiset-image-gen",
+        "./skills/aiset-seedance-video"
+      ]
+    },
+    {
+      "name": "utility-skills",
+      "description": "Utility tools for content processing",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/aiset-danger-x-to-markdown",
+        "./skills/aiset-compress-image",
+        "./skills/aiset-url-to-markdown",
+        "./skills/aiset-format-markdown",
+        "./skills/aiset-markdown-to-html",
+        "./skills/aiset-wechat-article-extractor",
+        "./skills/aiset-volcengine-video-understanding"
+      ]
+    }
+  ]
+}
