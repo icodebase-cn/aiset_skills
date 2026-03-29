@@ -1,7 +1,9 @@
-﻿import path from "node:path";
-import process from "node:process";
-import { homedir } from "node:os";
-import { access, mkdir, readFile, writeFile } from "node:fs/promises";
+#!/proj/aiblog/server/aiset_skills/skills/aiset-image-gen/scripts/run.sh
+import process from "process";
+import fetch from "node-fetch";
+import path from "path";
+import { homedir } from "os";
+import { access, mkdir, readFile, writeFile } from "fs/promises";
 import type { CliArgs, Provider, ExtendConfig } from "./types";
 
 function printUsage(): void {
@@ -111,7 +113,7 @@ function parseArgs(argv: string[]): CliArgs {
 
     if (a === "--provider") {
       const v = argv[++i];
-      if (v !== "google" && v !== "openai" && v !== "dashscope" && v !== "aiset") throw new Error(`Invalid provider: ${v}`);
+      if (v !== "google" && v !== "openai" && v !== "dashscope" && v !== "aiset" && v !== "metaevos") throw new Error(`Invalid provider: ${v}`);
       out.provider = v;
       continue;
     }
@@ -415,6 +417,9 @@ async function loadProviderModule(provider: Provider): Promise<ProviderModule> {
   }
   if (provider === "aiset") {
     return (await import("./providers/aiset")) as ProviderModule;
+  }
+  if (provider === "metaevos") {
+    return (await import("./providers/metaevos")) as ProviderModule;
   }
   return (await import("./providers/openai")) as ProviderModule;
 }

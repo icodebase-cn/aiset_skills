@@ -159,3 +159,6 @@ comic/
 *.ipr
 
 .claude/skills/canghe-skill-evolution
+*.pyc
+package.json
+package-lock.json

@@ -1,193 +1,68 @@
-﻿---
-name: aiset-markdown-to-html
-description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, PlantUML, footnotes, alerts, and infographics. Use when user asks for "markdown to html", "convert md to html", "md转html", or needs styled HTML output from markdown.
----
+# Markdown 转 HTML（aiset-markdown-to-html）
 
-# Markdown to HTML Converter
+## 描述
 
-Converts Markdown files to beautifully styled HTML with inline CSS, optimized for WeChat Official Account and other platforms.
+将 Markdown 转换为带样式的 HTML，支持微信公众号兼容主题。提供代码高亮、数学公式、PlantUML、脚注、警告框和信息图等丰富功能。
 
-## Script Directory
+## 功能
 
-**Agent Execution**: Determine this SKILL.md directory as `SKILL_DIR`, then use `${SKILL_DIR}/scripts/<name>.ts`.
+- 多种微信兼容主题样式
+- 代码语法高亮
+- 数学公式渲染（LaTeX/KaTeX）
+- PlantUML 图表支持
+- 脚注（footnotes）支持
+- GitHub 风格警告框（alerts）
+- 信息图嵌入
 
-| Script | Purpose |
-|--------|---------|
-| `scripts/main.ts` | Main entry point |
-
-## Preferences (EXTEND.md)
-
-Use Bash to check EXTEND.md existence (priority order):
+## 快速上手
 
 ```bash
-# Check project-level first
-test -f .aiset_skills/aiset-markdown-to-html/EXTEND.md && echo "project"
+# 转换 Markdown 为 HTML（传入文件路径）
+/aiset-markdown-to-html article.md
 
-# Then user-level (cross-platform: $HOME works on macOS/Linux/WSL)
-test -f "$HOME/.aiset_skills/aiset-markdown-to-html/EXTEND.md" && echo "user"
+# 直接传入 Markdown 内容（无需文件）
+/aiset-markdown-to-html "# 标题\n\n正文内容..."
+
+# 指定主题
+/aiset-markdown-to-html article.md --theme wechat
+
+# 输出到指定文件
+/aiset-markdown-to-html article.md --output article.html
+
+# MD 转 HTML（中文触发，可直接跟内容）
+md转html: article.md
+md转html: # 标题内容...
 ```
 
-┌──────────────────────────────────────────────────────────────┬───────────────────┐
-│                             Path                             │     Location      │
-├──────────────────────────────────────────────────────────────┼───────────────────┤
-│ .aiset_skills/aiset-markdown-to-html/EXTEND.md               │ Project directory │
-├──────────────────────────────────────────────────────────────┼───────────────────┤
-│ $HOME/.aiset_skills/aiset-markdown-to-html/EXTEND.md         │ User home         │
-└──────────────────────────────────────────────────────────────┴───────────────────┘
+## 支持的特殊语法
 
-┌───────────┬───────────────────────────────────────────────────────────────────────────┐
-│  Result   │                                  Action                                   │
-├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Found     │ Read, parse, apply settings                                               │
-├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Not found │ Use defaults                                                              │
-└───────────┴───────────────────────────────────────────────────────────────────────────┘
+```markdown
+# 数学公式
+$$E = mc^2$$
 
-**EXTEND.md Supports**: Default theme | Custom CSS variables | Code block style
+# 警告框
+> [!NOTE]
+> 这是一条注意信息
 
-## Workflow
+> [!WARNING]
+> 这是一条警告
 
-### Step 0: Pre-check (Chinese Content)
+# PlantUML 图表
+​```plantuml
+@startuml
+A -> B: 请求
+B -> A: 响应
+@enduml
+​```
 
-**Condition**: Only execute if input file contains Chinese text.
-
-**Detection**:
-1. Read input markdown file
-2. Check if content contains CJK characters (Chinese/Japanese/Korean)
-3. If no CJK content → skip to Step 1
-
-**Format Suggestion**:
-
-If CJK content detected AND `aiset-format-markdown` skill is available:
-
-Use `AskUserQuestion` to ask whether to format first. Formatting can fix:
-- Bold markers with punctuation inside causing `**` parse failures
-- CJK/English spacing issues
-
-**If user agrees**: Invoke `aiset-format-markdown` skill to format the file, then use formatted file as input.
-
-**If user declines**: Continue with original file.
-
-### Step 1: Confirm Theme
-
-Before converting, use AskUserQuestion to confirm the theme (unless user already specified):
-
-| Theme | Description |
-|-------|-------------|
-| `default` (Recommended) | 经典主题 - 传统排版，标题居中带底边，二级标题白字彩底 |
-| `grace` | 优雅主题 - 文字阴影，圆角卡片，精致引用块 |
-| `simple` | 简洁主题 - 现代极简风，不对称圆角，清爽留白 |
-
-### Step 2: Convert
-
-```bash
-npx -y bun ${SKILL_DIR}/scripts/main.ts <markdown_file> --theme <theme>
+# 脚注
+这是一段文字[^1]
+[^1]: 这是脚注内容
 ```
 
-### Step 3: Report Result
+## 最佳实践
 
-Display the output path from JSON result. If backup was created, mention it.
-
-## Usage
-
-```bash
-npx -y bun ${SKILL_DIR}/scripts/main.ts <markdown_file> [options]
-```
-
-**Options:**
-
-| Option | Description | Default |
-|--------|-------------|---------|
-| `--theme <name>` | Theme name (default, grace, simple) | default |
-| `--title <title>` | Override title from frontmatter | |
-| `--keep-title` | Keep the first heading in content | false (removed) |
-| `--help` | Show help | |
-
-**Examples:**
-
-```bash
-# Basic conversion (uses default theme, removes first heading)
-npx -y bun ${SKILL_DIR}/scripts/main.ts article.md
-
-# With specific theme
-npx -y bun ${SKILL_DIR}/scripts/main.ts article.md --theme grace
-
-# Keep the first heading in content
-npx -y bun ${SKILL_DIR}/scripts/main.ts article.md --keep-title
-
-# Override title
-npx -y bun ${SKILL_DIR}/scripts/main.ts article.md --title "My Article"
-```
-
-## Output
-
-**File location**: Same directory as input markdown file.
-- Input: `/path/to/article.md`
-- Output: `/path/to/article.html`
-
-**Conflict handling**: If HTML file already exists, it will be backed up first:
-- Backup: `/path/to/article.html.bak-YYYYMMDDHHMMSS`
-
-**JSON output to stdout:**
-
-```json
-{
-  "title": "Article Title",
-  "author": "Author Name",
-  "summary": "Article summary...",
-  "htmlPath": "/path/to/article.html",
-  "backupPath": "/path/to/article.html.bak-20260128180000",
-  "contentImages": [
-    {
-      "placeholder": "MDTOHTMLIMGPH_1",
-      "localPath": "/path/to/img.png",
-      "originalPath": "imgs/image.png"
-    }
-  ]
-}
-```
-
-## Themes
-
-| Theme | Description |
-|-------|-------------|
-| `default` | 经典主题 - 传统排版，标题居中带底边，二级标题白字彩底 |
-| `grace` | 优雅主题 - 文字阴影，圆角卡片，精致引用块 (by @brzhang) |
-| `simple` | 简洁主题 - 现代极简风，不对称圆角，清爽留白 (by @okooo5km) |
-
-## Supported Markdown Features
-
-| Feature | Syntax |
-|---------|--------|
-| Headings | `# H1` to `###### H6` |
-| Bold/Italic | `**bold**`, `*italic*` |
-| Code blocks | ` ```lang ` with syntax highlighting |
-| Inline code | `` `code` `` |
-| Tables | GitHub-flavored markdown tables |
-| Images | `![alt](src)` |
-| Links | `[text](url)` with footnote references |
-| Blockquotes | `> quote` |
-| Lists | `-` unordered, `1.` ordered |
-| Alerts | `> [!NOTE]`, `> [!WARNING]`, etc. |
-| Footnotes | `[^1]` references |
-| Ruby text | `{base|annotation}` |
-| Mermaid | ` ```mermaid ` diagrams |
-| PlantUML | ` ```plantuml ` diagrams |
-
-## Frontmatter
-
-Supports YAML frontmatter for metadata:
-
-```yaml
----
-title: Article Title
-author: Author Name
-description: Article summary
----
-```
-
-If no title is found, extracts from first H1/H2 heading or uses filename.
-
-## Extension Support
-
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+1. **微信发布**：使用微信兼容主题，确保在公众号中渲染正常
+2. **技术文章**：代码高亮和数学公式让技术内容更专业
+3. **配合 post-to-wechat**：先转 HTML 再发布到微信公众号
+4. **触发关键词**：当用户提到"Markdown 转 HTML"、"md转html"、"convert md"时使用此 skill
