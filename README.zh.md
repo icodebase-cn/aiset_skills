@@ -56,6 +56,7 @@ npx skills add icodebase-cn/aiset_skills
 | **content-skills** | 内容生成和发布 | [xhs-images](#aiset-xhs-images), [infographic](#aiset-infographic), [cover-image](#aiset-cover-image), [slide-deck](#aiset-slide-deck), [comic](#aiset-comic), [article-illustrator](#aiset-article-illustrator), [post-to-x](#aiset-post-to-x), [post-to-wechat](#aiset-post-to-wechat), [manga-drama](#aiset-manga-drama), [manga-style-video](#aiset-manga-style-video) |
 | **ai-generation-skills** | AI 生成后端 | [image-gen](#aiset-image-gen), [danger-gemini-web](#aiset-danger-gemini-web), [seedance-video](#aiset-seedance-video) |
 | **utility-skills** | 内容处理工具 | [url-to-markdown](#aiset-url-to-markdown), [danger-x-to-markdown](#aiset-danger-x-to-markdown), [compress-image](#aiset-compress-image), [format-markdown](#aiset-format-markdown), [wechat-article-extractor](#aiset-wechat-article-extractor), [markdown-to-html](#aiset-markdown-to-html), [find-skills](#find-skills), [obsidian-skills](#obsidian-skills), [obsidian-bases](#obsidian-bases), [obsidian-markdown](#obsidian-markdown), [remotion-best-practices](#remotion-best-practices), [skill-creator](#skill-creator), [volcengine-video-understanding](#aiset-volcengine-video-understanding) |
+| **marketing-skills** | 营销增长技能 | [product-marketing-context](#product-marketing-context), [seo-audit](#seo-audit), [copywriting](#copywriting), [page-cro](#page-cro), [signup-flow-cro](#signup-flow-cro), [onboarding-cro](#onboarding-cro), [analytics-tracking](#analytics-tracking), [content-strategy](#content-strategy), [customer-research](#customer-research), [pricing-strategy](#pricing-strategy) |
 
 ## 更新技能
 
@@ -717,6 +718,130 @@ AI 驱动的生成后端。
 - `doubao-seedance-1-0-pro-fast-250528`
 - `doubao-seedance-1-0-lite-t2v-250219`（仅文生视频）
 - `doubao-seedance-1-0-lite-i2v-250219`（支持参考图片的图生视频）
+
+### 营销技能 (Marketing Skills)
+
+营销增长和转化优化技能。基于 [Marketing Skills](https://github.com/coreyhaines31/marketingskills) 迁移并本地化，专注于 SaaS 和软件产品的营销自动化。
+
+#### product-marketing-context
+
+产品营销上下文 - 创建和维护产品营销基础文档，定义产品定位、目标受众、价值主张和竞争差异。所有其他营销技能的基础。
+
+**触发词**：产品营销、营销上下文、产品定位、目标受众、价值主张
+
+**使用场景**：
+- 新产品发布前建立营销基础
+- 重新定义产品定位和受众
+- 确保团队对产品有统一理解
+- 向外部合作伙伴传达产品信息
+
+#### seo-audit
+
+SEO审计与优化 - 审计、诊断和优化网站的SEO问题，提升搜索引擎排名。分析技术SEO、内容SEO和外链情况。
+
+**触发词**：SEO审计、搜索引擎优化、网站排名、SEO诊断、关键词优化
+
+**使用场景**：
+- 网站上线前SEO基础检查
+- 排名下降问题诊断
+- 定期SEO健康检查
+- 竞争对手SEO策略分析
+
+#### copywriting
+
+营销文案撰写 - 撰写、重写和优化营销文案，包括首页、落地页、产品页面、广告文案等。
+
+**触发词**：文案撰写、营销文案、落地页文案、广告文案、产品描述
+
+**使用场景**：
+- 新页面文案创作
+- 现有文案转化率优化
+- A/B测试文案版本
+- 广告活动文案
+
+#### page-cro
+
+页面转化率优化 - 优化营销页面的转化率，包括首页、落地页、产品页等。
+
+**触发词**：转化率优化、CRO、落地页优化、页面优化、转化提升
+
+**使用场景**：
+- 新页面转化基础优化
+- 转化率下降诊断
+- A/B测试设计和分析
+- 季节性活动页面优化
+
+#### signup-flow-cro
+
+注册流程优化 - 优化用户注册、登录和试用激活流程，减少流失，提升激活率。
+
+**触发词**：注册流程优化、登录流程优化、用户激活、试用转化、注册转化率
+
+**使用场景**：
+- 新用户注册体验优化
+- 注册流失问题诊断
+- 试用到付费转化提升
+- 社交登录集成
+
+#### onboarding-cro
+
+用户引导优化 - 优化新用户的首次体验和激活流程，帮助用户快速发现产品价值。
+
+**触发词**：用户引导、新用户激活、首次体验、产品引导、用户教育
+
+**使用场景**：
+- 新用户引导流程设计
+- 用户激活率提升
+- 新功能推广引导
+- 用户教育材料创建
+
+#### analytics-tracking
+
+数据分析与跟踪 - 设置、改进和审计网站分析跟踪和测量系统。
+
+**触发词**：数据分析、跟踪设置、转化跟踪、事件跟踪、数据审计
+
+**使用场景**：
+- 新网站数据跟踪搭建
+- 数据准确性审计
+- 转化漏斗分析
+- 自定义报告创建
+
+#### content-strategy
+
+内容策略规划 - 规划和执行内容营销策略，确定内容主题、格式、发布计划和分发渠道。
+
+**触发词**：内容策略、内容规划、内容营销、内容日历、内容主题
+
+**使用场景**：
+- 新品牌内容策略制定
+- 有机流量增长计划
+- SEO内容规划
+- 线索生成内容策略
+
+#### customer-research
+
+客户研究 - 进行、分析和综合客户研究，深入了解客户需求、痛点和行为模式。
+
+**触发词**：客户研究、用户研究、需求分析、用户访谈、客户洞察
+
+**使用场景**：
+- 新产品用户需求调研
+- 产品改进机会发现
+- 用户画像创建
+- 营销策略用户洞察
+
+#### pricing-strategy
+
+定价策略 - 帮助制定定价决策、产品包装和变现策略。
+
+**触发词**：定价策略、价格优化、产品定价、变现策略、价格测试
+
+**使用场景**：
+- 新产品定价决策
+- 现有产品价格调整
+- 产品层级重新设计
+- 收入优化策略
 
 ### 工具技能 (Utility Skills)
 
