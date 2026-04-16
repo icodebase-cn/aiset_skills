@@ -6,7 +6,19 @@ category: file-generation
 argument-hint: "[text prompt or task ID]"
 ---
 
-# Seedance Video Generation
+# Seedance Video Generation（seedance-video）
+
+## 描述
+
+使用字节跳动 Seedance 模型生成 AI 视频。支持文生视频、图生视频（首帧、首帧+尾帧、参考图），可查询和管理视频生成任务。支持 Seedance 1.5 Pro（带音频）、1.0 Pro、1.0 Pro Fast 和 1.0 Lite 模型。
+
+## 功能
+
+- 文生视频：根据文本提示生成视频
+- 图生视频：基于图片生成视频（首帧、首帧+尾帧、参考图）
+- 任务管理：查询视频生成任务状态
+- 视频下载：自动下载生成的视频
+- 多模型支持：支持多种 Seedance 模型版本
 
 Generate AI videos using ByteDance Seedance models via the Volcengine Ark API.
 
