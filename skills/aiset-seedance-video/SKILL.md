@@ -3,7 +3,18 @@ name: seedance-video
 description: 使用字节跳动 Seedance 模型生成视频。支持文生视频和图生视频功能，通过 volcengine-ark SDK 调用 API。当用户需要生成视频、创建视频内容或基于文字/图片制作视频时激活此技能。
 ---
 
-# Seedance 视频生成
+# Seedance 视频生成（seedance-video）
+
+## 描述
+
+使用字节跳动 Seedance 模型生成视频。支持文生视频和图生视频功能，通过 volcengine-ark SDK 调用 API。当用户需要生成视频、创建视频内容或基于文字/图片制作视频时使用。
+
+## 功能
+
+- 文生视频：根据文本提示词生成视频
+- 图生视频：根据首帧图片生成视频
+- 自定义参数：支持设置时长、宽高比、水印等
+- 任务管理：创建任务、查询状态、自动下载
 
 使用字节跳动 Seedance-1.5-pro 模型 (doubao-seedance-1-5-pro-251215) 根据文本或图片生成视频。
 
