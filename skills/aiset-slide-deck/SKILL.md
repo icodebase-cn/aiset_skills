@@ -3,9 +3,19 @@ name: aiset-slide-deck
 description: Generates professional slide deck images from content. Creates outlines with style instructions, then generates individual slide images. Use when user asks to "create slides", "make a presentation", "generate deck", "slide deck", or "PPT".
 ---
 
-# Slide Deck Generator
+# 幻灯片生成器（aiset-slide-deck）
 
-Transform content into professional slide deck images.
+## 描述
+
+将内容转换为专业幻灯片图片。创建带风格说明的大纲，然后生成单独的幻灯片图片。适用于创建幻灯片、制作演示文稿、生成PPT等场景。
+
+## 功能
+
+- 16种预设风格：蓝图、黑板、企业、极简、草图笔记、水彩、暗黑氛围等
+- 4个风格维度：纹理、氛围、排版、密度
+- 自动生成大纲和分镜
+- 支持批量生成幻灯片图片
+- 可合并为PPTX和PDF格式
 
 ## Usage
 

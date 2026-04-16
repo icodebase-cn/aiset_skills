@@ -3,9 +3,19 @@ name: aiset-comic
 description: Knowledge comic creator supporting multiple art styles and tones. Creates original educational comics with detailed panel layouts and sequential image generation. Use when user asks to create "知识漫画", "教育漫画", "biography comic", "tutorial comic", or "Logicomix-style comic".
 ---
 
-# Knowledge Comic Creator
+# 知识漫画创作器（aiset-comic）
 
-Create original knowledge comics with flexible art style × tone combinations.
+## 描述
+
+知识漫画创作工具，支持多种艺术风格和基调组合，创建原创教育漫画，包含详细的分镜布局和连续图像生成。适用于创建知识漫画、教育漫画、传记漫画、教程漫画等。
+
+## 功能
+
+- 支持多种画风：清线、日漫、写实、水墨、粉笔
+- 支持多种基调：中性、温馨、戏剧、浪漫、活力、复古、动作
+- 自动分镜布局设计
+- 角色一致性保持
+- 生成可合并为PDF的漫画页面
 
 ## Usage
 

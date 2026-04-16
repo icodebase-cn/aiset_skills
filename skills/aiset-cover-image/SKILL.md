@@ -3,9 +3,18 @@ name: aiset-cover-image
 description: Generates article cover images with 5 dimensions (type, palette, rendering, text, mood) combining 9 color palettes and 6 rendering styles. Supports cinematic (2.35:1), widescreen (16:9), and square (1:1) aspects. Use when user asks to "generate cover image", "create article cover", or "make cover".
 ---
 
-# Cover Image Generator
+# 文章封面生成器（aiset-cover-image）
 
-Generate elegant cover images for articles with 5-dimensional customization.
+## 描述
+
+为文章生成优雅的封面图片，支持五维定制（类型、调色板、渲染风格、文字、氛围），结合9种调色板和6种渲染风格。支持电影宽屏(2.35:1)、宽屏(16:9)和方形(1:1)等多种比例。
+
+## 功能
+
+- 五维定制：类型、调色板、渲染、文字、氛围
+- 9种调色板：温暖、优雅、冷色、暗色、大地、鲜艳、柔和、单色、复古
+- 6种渲染风格：扁平矢量、手绘、绘画风、数字风、像素风、粉笔风
+- 多种比例支持：16:9、2.35:1、4:3、3:2、1:1、3:4
 
 ## Usage
 

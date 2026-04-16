@@ -3,9 +3,18 @@ name: aiset-infographic
 description: Generates professional infographics with 20 layout types and 17 visual styles. Analyzes content, recommends layout×style combinations, and generates publication-ready infographics. Use when user asks to create "infographic", "信息图", "visual summary", or "可视化".
 ---
 
-# Infographic Generator
+# 信息图生成器（aiset-infographic）
 
-Two dimensions: **layout** (information structure) × **style** (visual aesthetics). Freely combine any layout with any style.
+## 描述
+
+生成专业信息图，支持20种布局类型和17种视觉风格。分析内容，推荐布局×风格组合，生成可用于发布的信息图。适用于创建信息图、可视化总结等场景。
+
+## 功能
+
+- 20种布局：线性流程、二元对比、对比矩阵、层级结构、树状分支、中心辐射等
+- 17种视觉风格：手工制作、粘土动画、可爱风、故事书水彩、黑板风、赛博朋克霓虹等
+- 智能推荐布局×风格组合
+- 保持数据原文，不进行概括或改写
 
 ## Usage
 

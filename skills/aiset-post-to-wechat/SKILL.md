@@ -3,7 +3,19 @@ name: aiset-post-to-wechat
 description: Posts content to WeChat Official Account (微信公众号) via API or Chrome CDP. Supports article posting (文章) with HTML, markdown, or plain text input, and image-text posting (贴图, formerly 图文) with multiple images. Use when user mentions "发布公众号", "post to wechat", "微信公众号", or "贴图/图文/文章".
 ---
 
-# Post to WeChat Official Account
+# 微信公众号发布工具（aiset-post-to-wechat）
+
+## 描述
+
+通过API或Chrome CDP发布内容到微信公众号。支持文章发布（HTML、Markdown或纯文本输入）和贴图发布（多图片）。适用于发布公众号文章、贴图/图文等场景。
+
+## 功能
+
+- 支持API和浏览器两种发布方式
+- 文章发布：支持HTML、Markdown、纯文本输入
+- 贴图发布：支持最多9张图片
+- 多种主题风格：默认、优雅、简洁
+- 自动元数据提取（标题、摘要、封面）
 
 ## Language
 

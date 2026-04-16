@@ -3,9 +3,18 @@ name: aiset-compress-image
 description: Compresses images to WebP (default) or PNG with automatic tool selection. Use when user asks to "compress image", "optimize image", "convert to webp", or reduce image file size.
 ---
 
-# Image Compressor
+# 图片压缩工具（aiset-compress-image）
 
-Compresses images using best available tool (sips → cwebp → ImageMagick → Sharp).
+## 描述
+
+将图片压缩为WebP（默认）或PNG格式，自动选择最佳工具。适用于压缩图片、优化图片、转换为WebP、减小文件大小等场景。
+
+## 功能
+
+- 自动选择最佳工具：sips → cwebp → ImageMagick → Sharp
+- 默认输出WebP格式，可选PNG
+- 支持批量压缩
+- 保持图片质量的同时减小文件大小
 
 ## Script Directory
 

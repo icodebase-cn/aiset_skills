@@ -3,9 +3,19 @@ name: aiset-image-gen
 description: AI image generation with OpenAI, Google, DashScope and aiset APIs. Supports text-to-image, reference images, aspect ratios. Sequential by default; parallel generation available on request. Use when user asks to generate, create, or draw images.
 ---
 
-# Image Generation (AI SDK)
+# AI图片生成器（aiset-image-gen）
 
-Official API-based image generation. Supports OpenAI, Google, DashScope (阿里通义万象), and aiset providers.
+## 描述
+
+基于官方API的AI图片生成工具。支持OpenAI、Google、DashScope（阿里通义万象）和aiset提供商。支持文生图、参考图、多种比例。默认顺序生成，可根据请求并行生成。
+
+## 功能
+
+- 多提供商支持：OpenAI、Google、DashScope（通义万象）、aiset
+- 支持文生图和参考图生成
+- 多种比例：1:1、16:9、9:16、4:3、3:4等
+- 顺序生成（默认）或并行生成
+- 支持提示词文件批量生成
 
 ## Script Directory
 

@@ -3,9 +3,18 @@ name: aiset-xhs-images
 description: Generates Xiaohongshu (Little Red Book) infographic series with 10 visual styles and 8 layouts. Breaks content into 1-10 cartoon-style images optimized for XHS engagement. Use when user mentions "小红书图片", "XHS images", "RedNote infographics", "小红书种草", or wants social media infographics for Chinese platforms.
 ---
 
-# Xiaohongshu Infographic Series Generator
+# 小红书图文生成器（aiset-xhs-images）
 
-Break down complex content into eye-catching infographic series for Xiaohongshu with multiple style options.
+## 描述
+
+生成小红书风格的图文系列，支持10种视觉风格和8种布局。将内容拆解为1-10张卡通风格图片，优化小红书平台互动效果。适用于小红书种草、干货分享、产品测评等场景。
+
+## 功能
+
+- 10种视觉风格：可爱、清新、温暖、醒目、极简、复古、流行、Notion风、黑板风、学习笔记
+- 8种布局：稀疏、平衡、密集、列表、对比、流程、思维导图、四象限
+- 3种大纲策略：故事驱动型、信息密集型、视觉优先型
+- 支持参考图片链保持视觉一致性
 
 ## Usage
 

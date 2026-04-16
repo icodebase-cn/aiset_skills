@@ -4,9 +4,18 @@ description: Behavioral guidelines to reduce common LLM coding mistakes. Use whe
 license: MIT
 ---
 
-# Karpathy Guidelines
+# Karpathy编程准则（karpathy-guidelines）
 
-Behavioral guidelines to reduce common LLM coding mistakes, derived from [Andrej Karpathy's observations](https://x.com/karpathy/status/2015883857489522876) on LLM coding pitfalls.
+## 描述
+
+减少常见LLM编码错误的行为准则，源自Andrej Karpathy对LLM编码陷阱的观察。适用于编写、审查或重构代码时避免过度复杂化，进行精确修改，明确假设，定义可验证的成功标准。
+
+## 核心原则
+
+- 编码前先思考：明确假设，提出权衡
+- 简洁优先：最小代码解决问题，不做推测
+- 精确修改：只改需要改的，不改动无关代码
+- 定义完成标准：明确可验证的成功标准
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 

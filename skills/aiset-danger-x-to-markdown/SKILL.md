@@ -3,11 +3,18 @@ name: aiset-danger-x-to-markdown
 description: Converts X (Twitter) tweets and articles to markdown with YAML front matter. Uses reverse-engineered API requiring user consent. Use when user mentions "X to markdown", "tweet to markdown", "save tweet", or provides x.com/twitter.com URLs for conversion.
 ---
 
-# X to Markdown
+# X转Markdown工具（aiset-danger-x-to-markdown）
 
-Converts X content to markdown:
-- Tweets/threads → Markdown with YAML front matter
-- X Articles → Full content extraction
+## 描述
+
+将X（Twitter）推文和文章转换为带YAML frontmatter的Markdown。使用逆向工程API，需要用户同意。适用于保存推文、转换X内容为Markdown等场景。
+
+## 功能
+
+- 推文/线程 → 带YAML frontmatter的Markdown
+- X长文章 → 完整内容提取
+- 保留作者、时间、链接等元数据
+- 支持图片下载和本地引用
 
 ## Script Directory
 

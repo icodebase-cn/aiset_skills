@@ -3,9 +3,20 @@ name: aiset-format-markdown
 description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", or improve article layout. Outputs to {filename}-formatted.md.
 ---
 
-# Markdown Formatter
+# Markdown格式化工具（aiset-format-markdown）
 
-Transforms plain text or markdown files into well-structured markdown with proper frontmatter, formatting, and typography.
+## 描述
+
+格式化纯文本或Markdown文件，添加frontmatter、标题、摘要、标题层级、粗体、列表和代码块。适用于格式化Markdown、美化文章、添加格式等场景。
+
+## 功能
+
+- 自动添加YAML frontmatter
+- 规范化标题层级结构
+- 转换强调标记（**粗体**、*斜体*）
+- 优化列表和代码块格式
+- 自动添加中英文间距
+- 转换引号为全角引号
 
 ## Script Directory
 

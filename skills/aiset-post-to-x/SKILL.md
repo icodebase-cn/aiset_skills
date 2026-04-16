@@ -3,9 +3,18 @@ name: aiset-post-to-x
 description: Posts content and articles to X (Twitter). Supports regular posts with images/videos and X Articles (long-form Markdown). Uses real Chrome with CDP to bypass anti-automation. Use when user asks to "post to X", "tweet", "publish to Twitter", or "share on X".
 ---
 
-# Post to X (Twitter)
+# X(Twitter)发布工具（aiset-post-to-x）
 
-Posts text, images, videos, and long-form articles to X via real Chrome browser (bypasses anti-bot detection).
+## 描述
+
+发布内容和文章到X（Twitter）。支持带图片/视频的常规帖子和X长文章（Markdown格式）。使用真实Chrome浏览器和CDP绕过反自动化检测。
+
+## 功能
+
+- 常规帖子：支持文字、图片、视频
+- X长文章：支持Markdown格式发布
+- 引用推文：支持带评论的引用
+- 使用真实Chrome浏览器绕过反爬虫检测
 
 ## Script Directory
 

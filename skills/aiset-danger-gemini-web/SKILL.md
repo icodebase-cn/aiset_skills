@@ -3,9 +3,19 @@ name: aiset-danger-gemini-web
 description: Generates images and text via reverse-engineered Gemini Web API. Supports text generation, image generation from prompts, reference images for vision input, and multi-turn conversations. Use when other skills need image generation backend, or when user requests "generate image with Gemini", "Gemini text generation", or needs vision-capable AI generation.
 ---
 
-# Gemini Web Client
+# Gemini Web客户端（aiset-danger-gemini-web）
 
-Text/image generation via Gemini Web API. Supports reference images and multi-turn conversations.
+## 描述
+
+通过逆向工程Gemini Web API生成图片和文本。支持文本生成、提示词生成图片、参考图片视觉输入、多轮对话。适用于需要Gemini图片生成后端或视觉能力的场景。
+
+## 功能
+
+- 文本生成
+- 文生图和图生图
+- 支持参考图片进行视觉理解
+- 多轮对话支持
+- 可作为其他技能的图片生成后端
 
 ## Script Directory
 

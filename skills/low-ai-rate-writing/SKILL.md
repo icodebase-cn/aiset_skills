@@ -3,9 +3,19 @@ name: low-ai-rate-writing
 description: Reduce AI detection rate in Chinese content from 50%+ to <20%. Use when Frank writes articles or content and needs to lower "疑似 AI" scores from detection tools. Covers: breaking parallelism, using colloquial expressions, avoiding academic language, shortening sentences, removing logical connectors, adding personal voice, and creating natural paragraph breaks. Includes reference workflow and specific anti-patterns to avoid.
 ---
 
-# Low AI Rate Writing
+# 降低AI检测率写作（low-ai-rate-writing）
 
-This skill helps reduce AI detection rates in Chinese content by applying proven techniques that make writing feel more natural and human-like, rather than AI-generated.
+## 描述
+
+帮助降低中文内容的AI检测率，将"疑似AI"分数从50%+降至20%以下。通过应用经过验证的技术使写作感觉更自然、更像人类写作。适用于需要降低AI检测分数的文章写作场景。
+
+## 功能
+
+- 打破平行结构，避免对称句式
+- 使用口语化表达，避免学术语言
+- 缩短句子长度，去除逻辑连接词
+- 添加个人声音，创造自然段落分隔
+- 提供具体的反模式参考
 
 ## Core Principle
 

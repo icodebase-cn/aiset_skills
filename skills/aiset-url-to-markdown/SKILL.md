@@ -3,9 +3,18 @@ name: aiset-url-to-markdown
 description: Fetch any URL and convert to markdown using Chrome CDP. Supports two modes - auto-capture on page load, or wait for user signal (for pages requiring login). Use when user wants to save a webpage as markdown.
 ---
 
-# URL to Markdown
+# URL转Markdown工具（aiset-url-to-markdown）
 
-Fetches any URL via Chrome CDP and converts HTML to clean markdown.
+## 描述
+
+使用Chrome CDP获取任意URL并转换为Markdown。支持两种模式：页面加载时自动捕获，或等待用户信号（适用于需要登录的页面）。适用于保存网页为Markdown、抓取文章等场景。
+
+## 功能
+
+- 基于Chrome CDP的网页抓取
+- 自动清理HTML转换为干净Markdown
+- 支持需要登录的页面（等待用户信号模式）
+- 保留文章标题、作者、发布时间等元数据
 
 ## Script Directory
 

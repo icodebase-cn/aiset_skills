@@ -3,9 +3,19 @@ name: obsidian-bases
 description: Create and edit Obsidian Bases (.base files) with views, filters, formulas, and summaries. Use when working with .base files, creating database-like views of notes, or when the user mentions Bases, table views, card views, filters, or formulas in Obsidian.
 ---
 
-# Obsidian Bases Skill
+# Obsidian Bases工具（obsidian-bases）
 
-This skill enables skills-compatible agents to create and edit valid Obsidian Bases (`.base` files) including views, filters, formulas, and all related configurations.
+## 描述
+
+创建和编辑Obsidian Bases（.base文件），支持视图、过滤器、公式和摘要。适用于处理.base文件、创建笔记的数据库视图，或用户提及Obsidian中的Bases、表格视图、卡片视图、过滤器、公式等场景。
+
+## 功能
+
+- 创建和编辑Obsidian Bases文件
+- 支持多种视图：表格视图、卡片视图、列表视图
+- 全局过滤器和视图特定过滤器
+- 自定义公式和属性配置
+- 动态笔记视图
 
 ## Overview
 
@@ -154,16 +164,16 @@ Formulas compute values from properties. Defined in the `formulas` section.
 formulas:
   # Simple arithmetic
   total: "price * quantity"
-  
+
   # Conditional logic
   status_icon: 'if(done, "✅", "⏳")'
-  
+
   # String formatting
   formatted_price: 'if(price, price.toFixed(2) + " dollars")'
-  
+
   # Date formatting
   created: 'file.ctime.format("YYYY-MM-DD")'
-  
+
   # Complex expressions
   days_old: '((now() - file.ctime) / 86400000).round(0)'
 ```
@@ -213,7 +223,7 @@ formulas:
 ### Date Arithmetic
 
 ```yaml
-# Duration units: y/year/years, M/month/months, d/day/days, 
+# Duration units: y/year/years, M/month/months, d/day/days,
 #                 w/week/weeks, h/hour/hours, m/minute/minutes, s/second/seconds
 
 # Add/subtract durations
@@ -490,7 +500,7 @@ filters:
 formulas:
   last_updated: 'file.mtime.relative()'
   link_count: 'file.links.length'
-  
+
 summaries:
   avgLinks: 'values.filter(value.isType("number")).mean().round(1)'
 

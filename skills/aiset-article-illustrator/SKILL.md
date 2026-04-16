@@ -3,9 +3,18 @@ name: aiset-article-illustrator
 description: Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type × Style two-dimension approach. Use when user asks to "illustrate article", "add images", "generate images for article", or "为文章配图".
 ---
 
-# Article Illustrator
+# 文章配图生成器（aiset-article-illustrator）
 
-Analyze articles, identify illustration positions, generate images with Type × Style consistency.
+## 描述
+
+分析文章结构，识别需要视觉辅助的位置，使用类型×风格二维方法生成插图。适用于用户要求"为文章配图"、"添加图片"、"生成文章插图"等场景。
+
+## 功能
+
+- 分析文章内容，识别需要配图的位置
+- 使用类型（信息结构）×风格（视觉美学）二维方法生成插图
+- 支持多种配图类型：信息图、场景图、流程图、对比图、框架图、时间线
+- 支持多种视觉风格：Notion风、温暖风、极简风、蓝图风、水彩风、优雅风等
 
 ## Two Dimensions
 

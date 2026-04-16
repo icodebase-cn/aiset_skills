@@ -4,9 +4,19 @@ description: Guide for creating effective skills. This skill should be used when
 license: Complete terms in LICENSE.txt
 ---
 
-# Skill Creator
+# Skill创建指南（skill-creator）
 
-This skill provides guidance for creating effective skills.
+## 描述
+
+创建有效Skill的指南。当用户想要创建新skill（或更新现有skill）以扩展Claude能力时使用，提供专业领域知识、工作流程或工具集成指导。
+
+## 功能
+
+- Skill设计原则和最佳实践
+- 专业工作流程设计
+- 工具集成指南
+- 领域专业知识封装
+- 资源打包和脚本管理
 
 ## About Skills
 

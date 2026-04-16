@@ -5,9 +5,20 @@ metadata:
   tags: remotion, video, react, animation, composition
 ---
 
-## When to use
+# Remotion最佳实践（remotion-best-practices）
 
-Use this skills whenever you are dealing with Remotion code to obtain the domain-specific knowledge.
+## 描述
+
+Remotion最佳实践指南 - 使用React创建视频。提供Remotion开发的专业知识和最佳实践，包括3D内容、动画、资源管理、音频处理、图表可视化等方面。
+
+## 功能
+
+- 3D内容集成（Three.js和React Three Fiber）
+- 动画基础和高级技巧
+- 图片、视频、音频、字体资源管理
+- 动态元数据计算
+- 字幕显示和字幕提取
+- 图表和数据可视化
 
 ## How to use
 

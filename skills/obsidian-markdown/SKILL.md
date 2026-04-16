@@ -3,9 +3,19 @@ name: obsidian-markdown
 description: Create and edit Obsidian Flavored Markdown with wikilinks, embeds, callouts, properties, and other Obsidian-specific syntax. Use when working with .md files in Obsidian, or when the user mentions wikilinks, callouts, frontmatter, tags, embeds, or Obsidian notes.
 ---
 
-# Obsidian Flavored Markdown Skill
+# Obsidian Markdown工具（obsidian-markdown）
 
-This skill enables skills-compatible agents to create and edit valid Obsidian Flavored Markdown, including all Obsidian-specific syntax extensions.
+## 描述
+
+创建和编辑Obsidian风格的Markdown，支持维基链接、嵌入、标注、属性和其他Obsidian特定语法。适用于处理Obsidian中的.md文件，或用户提及维基链接、标注、frontmatter、标签、嵌入等场景。
+
+## 功能
+
+- 创建和编辑Obsidian风格Markdown
+- 支持维基链接[[ ]]和嵌入![[ ]]
+- 标注（Callouts）语法支持
+- Frontmatter属性管理
+- 标签和内部链接
 
 ## Overview
 
@@ -24,7 +34,7 @@ This is a paragraph.
 
 This is another paragraph (blank line between creates separate paragraphs).
 
-For a line break within a paragraph, add two spaces at the end  
+For a line break within a paragraph, add two spaces at the end
 or use Shift+Enter.
 ```
 
