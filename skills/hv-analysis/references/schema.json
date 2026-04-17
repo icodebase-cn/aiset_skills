@@ -1,5 +1,5 @@
 {
-  "$schema": "横纵分析法 / Horizontal-Vertical Analysis Framework",
+  "$schema": "纵横分析法 / Horizontal-Vertical Analysis Framework",
   "version": "1.0",
   "description": "一个用于系统性研究产品、公司、概念或人物的双轴分析框架。纵轴追踪完整生命历程，横轴展开当下竞争对比。",
 
@@ -137,7 +137,7 @@
   },
 
   "横纵交叉_洞察": {
-    "description": "纵轴和横轴的交叉分析，这是横纵分析法最有价值的部分",
+    "description": "纵轴和横轴的交叉分析，这是纵横分析法最有价值的部分",
 
     "历史如何塑造了当下的竞争位置": "string — 纵向历程中的哪些决策和事件，决定了它今天在横向对比中的位置",
     "竞品的纵向对比": "string — 如果把竞品也放到时间线上看，它们的起源和演变有什么不同",
