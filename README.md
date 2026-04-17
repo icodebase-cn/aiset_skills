@@ -49,6 +49,12 @@ Simply tell Claude Code:
 
 > Please install Skills from github.com/icodebase-cn/aiset_skills
 
+**Option 4: Use AISet Client Directly**
+
+Download: https://aiqianji.com/download/
+
+Type "/" in the chat interface to invoke skills directly.
+
 ### Available Plugins
 
 | Plugin | Description | Skills |
@@ -56,6 +62,7 @@ Simply tell Claude Code:
 | **content-skills** | Content generation and publishing | [xhs-images](#aiset-xhs-images), [infographic](#aiset-infographic), [cover-image](#aiset-cover-image), [slide-deck](#aiset-slide-deck), [comic](#aiset-comic), [article-illustrator](#aiset-article-illustrator), [post-to-x](#aiset-post-to-x), [post-to-wechat](#aiset-post-to-wechat), [manga-drama](#aiset-manga-drama), [manga-style-video](#aiset-manga-style-video) |
 | **ai-generation-skills** | AI-powered generation backends | [image-gen](#aiset-image-gen), [danger-gemini-web](#aiset-danger-gemini-web), [seedance-video](#aiset-seedance-video) |
 | **utility-skills** | Utility tools for content processing | [url-to-markdown](#aiset-url-to-markdown), [danger-x-to-markdown](#aiset-danger-x-to-markdown), [compress-image](#aiset-compress-image), [format-markdown](#aiset-format-markdown), [wechat-article-extractor](#aiset-wechat-article-extractor), [markdown-to-html](#aiset-markdown-to-html), [find-skills](#find-skills), [obsidian-skills](#obsidian-skills), [obsidian-bases](#obsidian-bases), [obsidian-markdown](#obsidian-markdown), [remotion-best-practices](#remotion-best-practices), [skill-creator](#skill-creator), [volcengine-video-understanding](#aiset-volcengine-video-understanding) |
+| **marketing-skills** | Marketing growth and conversion optimization | [product-marketing-context](#product-marketing-context), [seo-audit](#seo-audit), [copywriting](#copywriting), [page-cro](#page-cro), [signup-flow-cro](#signup-flow-cro), [onboarding-cro](#onboarding-cro), [analytics-tracking](#analytics-tracking), [content-strategy](#content-strategy), [customer-research](#customer-research), [pricing-strategy](#pricing-strategy) |
 
 ## Update Skills
 
@@ -742,6 +749,130 @@ Generate AI videos using ByteDance Seedance. Supports text-to-video and image-to
 - `doubao-seedance-1-0-pro-fast-250528`
 - `doubao-seedance-1-0-lite-t2v-250219` (text-to-video only)
 - `doubao-seedance-1-0-lite-i2v-250219` (image-to-video with reference images)
+
+### Marketing Skills
+
+Marketing growth and conversion optimization skills. Migrated from [Marketing Skills](https://github.com/coreyhaines31/marketingskills) and localized, focused on SaaS and software product marketing automation.
+
+#### product-marketing-context
+
+Product Marketing Context - Create and maintain product marketing foundation documents, defining product positioning, target audience, value proposition, and competitive differentiation. The foundation for all other marketing skills.
+
+**Triggers**: product marketing, marketing context, product positioning, target audience, value proposition
+
+**Use Cases**:
+- Establish marketing foundation before new product launch
+- Redefine product positioning and audience
+- Ensure team alignment on product messaging
+- Communicate product information to external partners
+
+#### seo-audit
+
+SEO Audit & Optimization - Audit, diagnose, and optimize website SEO issues to improve search engine rankings. Analyzes technical SEO, content SEO, and backlink profile.
+
+**Triggers**: SEO audit, search engine optimization, website ranking, SEO diagnosis, keyword optimization
+
+**Use Cases**:
+- Pre-launch SEO foundation check
+- Diagnose ranking drops
+- Regular SEO health monitoring
+- Competitor SEO strategy analysis
+
+#### copywriting
+
+Marketing Copywriting - Write, rewrite, and optimize marketing copy for homepages, landing pages, product pages, ad copy, and more.
+
+**Triggers**: copywriting, marketing copy, landing page copy, ad copy, product description
+
+**Use Cases**:
+- Create copy for new pages
+- Optimize existing copy for conversion
+- Create A/B test variations
+- Write ad campaign copy
+
+#### page-cro
+
+Page Conversion Rate Optimization - Optimize conversion rates for marketing pages including homepages, landing pages, and product pages.
+
+**Triggers**: conversion rate optimization, CRO, landing page optimization, page optimization, conversion improvement
+
+**Use Cases**:
+- Establish conversion foundation for new pages
+- Diagnose conversion rate drops
+- Design and analyze A/B tests
+- Optimize seasonal campaign pages
+
+#### signup-flow-cro
+
+Signup Flow Optimization - Optimize user registration, login, and trial activation flows to reduce friction and improve activation rates.
+
+**Triggers**: signup flow optimization, login flow optimization, user activation, trial conversion, signup conversion rate
+
+**Use Cases**:
+- Optimize new user registration experience
+- Diagnose signup flow abandonment
+- Improve trial-to-paid conversion
+- Integrate social login
+
+#### onboarding-cro
+
+User Onboarding Optimization - Optimize new user first-run experience and activation flows to help users quickly discover product value.
+
+**Triggers**: user onboarding, new user activation, first-run experience, product guidance, user education
+
+**Use Cases**:
+- Design new user onboarding flow
+- Improve user activation rates
+- Guide users to discover new features
+- Create user education materials
+
+#### analytics-tracking
+
+Analytics & Tracking - Set up, improve, and audit website analytics tracking and measurement systems.
+
+**Triggers**: analytics, tracking setup, conversion tracking, event tracking, data audit
+
+**Use Cases**:
+- Establish data tracking for new websites
+- Audit data accuracy
+- Build conversion funnel analysis
+- Create custom reports
+
+#### content-strategy
+
+Content Strategy Planning - Plan and execute content marketing strategies, determining content themes, formats, publishing schedules, and distribution channels.
+
+**Triggers**: content strategy, content planning, content marketing, content calendar, content themes
+
+**Use Cases**:
+- Develop content strategy for new brands
+- Plan organic traffic growth
+- Create SEO-friendly content
+- Build lead generation content strategy
+
+#### customer-research
+
+Customer Research - Conduct, analyze, and synthesize customer research to deeply understand customer needs, pain points, and behavior patterns.
+
+**Triggers**: customer research, user research, needs analysis, user interviews, customer insights
+
+**Use Cases**:
+- Research user needs for new products
+- Discover product improvement opportunities
+- Create user personas
+- Gather user insights for marketing strategy
+
+#### pricing-strategy
+
+Pricing Strategy - Help make pricing decisions, product packaging, and monetization strategy.
+
+**Triggers**: pricing strategy, price optimization, product pricing, monetization strategy, price testing
+
+**Use Cases**:
+- Determine pricing for new products
+- Adjust pricing for existing products
+- Redesign product tiers
+- Optimize revenue strategy
 
 ### Utility Skills
 

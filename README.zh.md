@@ -49,6 +49,12 @@ npx skills add icodebase-cn/aiset_skills
 
 > 请帮我安装 github.com/icodebase-cn/aiset_skills 中的 Skills
 
+**方式四：直接使用AISet客户端**
+
+下载地址：https://aiqianji.com/download/
+
+在聊天界面输入“/”即可调用skills。
+
 ### 可用插件
 
 | 插件 | 说明 | 包含技能 |
