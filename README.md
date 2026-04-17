@@ -63,6 +63,7 @@ Type "/" in the chat interface to invoke skills directly.
 | **ai-generation-skills** | AI-powered generation backends | [image-gen](#aiset-image-gen), [danger-gemini-web](#aiset-danger-gemini-web), [seedance-video](#aiset-seedance-video) |
 | **utility-skills** | Utility tools for content processing | [url-to-markdown](#aiset-url-to-markdown), [danger-x-to-markdown](#aiset-danger-x-to-markdown), [compress-image](#aiset-compress-image), [format-markdown](#aiset-format-markdown), [wechat-article-extractor](#aiset-wechat-article-extractor), [markdown-to-html](#aiset-markdown-to-html), [find-skills](#find-skills), [obsidian-skills](#obsidian-skills), [obsidian-bases](#obsidian-bases), [obsidian-markdown](#obsidian-markdown), [remotion-best-practices](#remotion-best-practices), [skill-creator](#skill-creator), [volcengine-video-understanding](#aiset-volcengine-video-understanding) |
 | **marketing-skills** | Marketing growth and conversion optimization | [product-marketing-context](#product-marketing-context), [seo-audit](#seo-audit), [copywriting](#copywriting), [page-cro](#page-cro), [signup-flow-cro](#signup-flow-cro), [onboarding-cro](#onboarding-cro), [analytics-tracking](#analytics-tracking), [content-strategy](#content-strategy), [customer-research](#customer-research), [pricing-strategy](#pricing-strategy) |
+| **writing-skills** | Creative writing and storytelling | [salt-story](#salt-story) |
 
 ## Update Skills
 
@@ -873,6 +874,29 @@ Pricing Strategy - Help make pricing decisions, product packaging, and monetizat
 - Adjust pricing for existing products
 - Redesign product tiers
 - Optimize revenue strategy
+
+### Writing Skills
+
+Creative writing and storytelling skills.
+
+#### salt-story
+
+Salt Selection Story Writing - Generate plot-twisting, engaging, non-AI-tasting Zhihu Salt Selection paid stories. Designed for Zhihu's paid content platform, specializing in building suspense, creating twists, and developing characters.
+
+**Triggers**: salt story, Zhihu story, paid story, story writing, write story, salt selection
+
+**Use Cases**:
+- Create stories for Zhihu Salt Selection submissions
+- Write short stories suitable for paid reading
+- Practice suspense and twist-based storytelling
+- Create monetizable story content
+
+**Story Characteristics**:
+- Gripping openings with immediate conflict
+- Fast-paced, high-density plotting
+- Three-dimensional characters with flaws
+- Natural plot twists with proper foreshadowing
+- Authentic, non-AI writing style
 
 ### Utility Skills
 
