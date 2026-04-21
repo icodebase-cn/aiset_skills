@@ -2,6 +2,10 @@
 
 Use this checklist when rewriting content to lower AI detection rates.
 
+## CRITICAL RULE: Don't Over-Rewrite
+
+Only touch sections the detector flags. Leave already-human-scoring text alone — even typos and grammatical errors are human signals. Adding vivid details and scene-setting to flat human text makes it MORE AI-like because AI-generated "humanization" is itself detectable.
+
 ## 句式对称性 (Kill It)
 
 ### Pattern: 并列结构
@@ -45,6 +49,17 @@ E4B 升级到 6GB。上下文还是 128K。图片、音频都支持。
 31B 吃显存最多，20GB。上下文到 256K。但不支持音频。
 ```
 
+## Sentence-Level AI Signals in Chinese Self-Media
+
+These specific patterns trigger high scores even when surrounding text is fine:
+
+- **Chiasmus / echo sentences**: "人老不老，不是看年纪，而是看是不是自己认老了" — perfectly mirrored logic is AI. Replace with an informal aside: "就想着老张，他这是何苦呢"
+- **"显示" + formal nouns**: "体检结果显示各项指标都很不理想" — reads like a report. Replace with: "去年查了一回，一堆指标不好看"
+- **Symmetrical time parallel**: "每天早上跳舞，下午画画" — too clean. Break it: "天天去公园跳舞，没事画两笔画"
+- **Dramatic 引用 setup**: "他跟我说了一句话我印象特深——" followed by a formatted quote. Just paraphrase it casually instead.
+- **反问 point-making**: Ending a paragraph with "这不是瞎耽误工夫吗？" — AI loves rhetorical questions to summarize. Cut the question or replace with a flat observation.
+- **"突然" as pivot word**: "突然看到一条新闻" — AI transition word. Replace with "闲着没事刷手机，看到"
+
 ## 正式词汇 (Replace)
 
 ### Replace These:
@@ -61,6 +76,7 @@ E4B 升级到 6GB。上下文还是 128K。图片、音频都支持。
 | 有效降低 | 少了、省了 |
 | 提升、提高 | 升、涨、上升、快了 |
 | 实现、提供 | 搞定、做出、整出来 |
+| 显示 + 各项指标 | 查了一回，一堆指标 |
 
 ### Pattern: Hedging Language
 
@@ -241,5 +257,9 @@ Google 改了架构。不是所有 token 都平等对待。有的快速处理，
 - [ ] No long sentences held together by commas?
 - [ ] Commands/code not wrapped in explanation text?
 - [ ] Numbers expressed in different ways?
+- [ ] Did NOT rewrite already-passing sections?
+- [ ] No chiasmus/echo sentence structure?
+- [ ] No "突然" as pivot word?
+- [ ] No formal 引用 setups ("我印象特深——")?
 
-If you hit 7+ checkmarks, you're good. Under 5? Needs more work.
+If you hit 10+ checkmarks, you're good. Under 7? Needs more work.
