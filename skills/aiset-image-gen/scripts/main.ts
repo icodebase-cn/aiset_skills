@@ -96,9 +96,9 @@ function parseArgs(argv: string[]): CliArgs {
       continue;
     }
 
-    if (a === "--promptfiles") {
+    if (a === "--promptfiles" || a === "--promptfile") {
       const { items, next } = takeMany(i);
-      if (items.length === 0) throw new Error("Missing files for --promptfiles");
+      if (items.length === 0) throw new Error(`Missing files for ${a}`);
       out.promptFiles.push(...items);
       i = next;
       continue;
